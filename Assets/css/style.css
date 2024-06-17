@@ -1,0 +1,833 @@
+/******************************************************************
+Theme Name: FORÇA FITNESS
+Description: Land Page Gym com uso de API e request banco de dados, PI segundo modulo do curso técnico de Desenvolvimento de Sistemas
+Author: Erivaldo do Nascimento Silva 
+Version: 1.0
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Fonts
+2.  Template Defaul CSS
+3.  Header Section
+4.  Hero Section
+5.  Service Section
+6.  Class Section
+7.  Trainer Table Section
+8.  Team Section
+9.  Contact
+10. Footer Style
+
+-------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------*/
+/* Fonts
+/*----------------------------------------*/
+
+@font-face {
+    font-family: oswald;
+    src: url(../Fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src:url(../Fonts/Roboto-Medium.ttf)
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: acetone;
+    src: url(../Fonts/Acetone-w1gn6.ttf);
+}
+
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------------------*/
+/*  Header
+/*---------------------*/
+
+
+.container-links {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;   
+}
+
+.navbar-nav {
+    font-family: 'oswald', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}    
+
+.navbar-brand {
+    margin-top: -14px;
+}
+
+.navbar-brand h1{
+    height: 120px;
+    width: 80px;
+    background-color: #71c5a5;
+}
+
+.nav-link {
+    margin-left: 1rem ;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+.navbar-toggler {
+    margin-bottom: 40px;
+}
+
+.offcanvas-header a {
+    color: white;
+    text-decoration: none;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+.offcanvas-header h1 {
+    height: 120px;
+    width: 80px;
+    background-color: #71c5a5;
+}
+
+.btn {
+    margin-left: 0.7rem ;
+    margin-right: 0.7rem;
+    padding: 12px 24px;
+}
+
+.offcanvas-body {
+    padding: 50px;
+}
+
+.btn-offcanvas {
+    margin-top: 1.3rem;
+    margin-bottom: 1.4rem;
+    margin-left: -0.2rem;
+    padding-left: 6rem ;
+    padding-right: 6rem;
+}
+
+
+/*---------------------*/
+/*  Hero Section
+/*----------------------*/
+
+
+.carousel-item img {
+    height: 550px;
+}
+
+
+/*---------------------
+  Unidades Section
+-----------------------*/
+
+
+.form-label {
+    color: #424850;
+    font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    color: #424850;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #f6f7f8;    
+}
+
+.all-gyms-container a {
+    color: #71C5A5;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+
+.box-unidades a {
+    border: 2px solid red;
+}
+
+.box-links {
+    
+    height:265px;
+    border: 25px solid; /* As 4 bordas sólidas com 25px de espessura */
+    border-color: #00a651 yellow #00a651 #00a651;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    background-color: #00a651;
+    color: white;
+    text-decoration: none;
+    font-family: "roboto";
+    font-size: 1.8rem;
+    border-radius: 5%;
+    /*padding: 15px;*/
+}
+
+
+/*---------------------
+  Banner Section
+-----------------------*/
+
+
+.container-banner {
+    height: 500px;
+    background-image: url(), linear-gradient(#4a9e7e, #fafafa );
+}
+
+video {
+    height: 500px;
+}
+
+.title-modalidades {
+    background-image: url(/0.Modalidades/1.png), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 100%;
+    text-shadow: 2px 2px 2px red;
+}
+
+.bg-text-modalidades {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40%;
+    background-color: #4a9e7e;   
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgb(255, 0, 0) 0px 1px 5px;
+}
+
+.title-modalidades h2 {
+    
+    font-family: "acetone";
+    font-size: 32px;
+}
+
+
+#img-musculacao {
+    background-image: url(/1.Musculacao/1.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+#img-funcional {
+    background-image: url(/2.Funcional/3.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+
+}
+#img-crossFit {
+    background-image: url(/3.CrossFit/1.webp), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+#img-boxe {
+    background-image: url(/4.boxe/3.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+#img-zumba {
+    background-image: url(/5.Zumba/1.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+#img-yoga {
+    background-image: url(/6.Yoga/2.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+#img-ballet {
+    background-image: url(/9.balletKids/1.jpg), linear-gradient(#4a9e7e, #fafafa );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+
+/*--------------------------------
+ Trainer Table Shedule Section
+--------------------------------*/ 
+
+
+.trainer-schedule{
+    background-image: url("IMAGE_URL"), linear-gradient(#4a9e7e, #fafafa, #4a9e7e );
+}
+
+
+.trainer-schedule .section-title {
+    text-align: center;
+}
+
+.trainer-schedule .section-title h2 {
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 46px;
+}
+
+.trainer-schedule .section-title h2:before {
+    width: 70px;
+    height: 3px;
+    right: 0;
+    left: 0;
+    top: 49px;
+    margin: 0 auto;
+}
+
+.trainer-schedule .section-title p {
+    color: #ffffff;
+}
+  
+.schedule-table {
+    overflow-x: auto;
+}
+
+
+.schedule-table table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+}
+
+.schedule-table table thead tr {
+    background: #ffffff;
+}
+
+.schedule-table table thead tr th {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+
+.schedule-table table tbody {
+    border-top: 1px solid #e5e5e5;
+}
+
+.schedule-table table tbody tr {
+    border-bottom: 1px solid #e5e5e5;
+    background: #F0F0F0;
+}
+
+.schedule-table table tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+.schedule-table table tbody tr td {
+    border-right: 1px solid #e5e5e5;
+    padding: 20px 10px 16px;
+    width: 146px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.schedule-table table tbody tr td.gym h6, .schedule-table table tbody tr td.crossfit h6, .schedule-table table tbody tr td.running h6 {
+    color: #f34e3a;
+}
+
+.schedule-table table tbody tr td.yoga h6 {
+    color: #247cc6;
+}
+
+.schedule-table table tbody tr td.body h6, .schedule-table table tbody tr td.box h6 {
+    color: #6dcff6;
+}
+
+.schedule-table table tbody tr td.cardio h6 {
+    color: #4cbcc3;
+}
+
+.schedule-table table tbody tr td.box.g h6 {
+    color: #00a651;
+}
+
+.schedule-table table tbody tr td h6 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.schedule-table table tbody tr td span {
+    font-size: 14px;
+    display: block;
+    color: #191919;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.schedule-table table tbody tr td .trainer-name {
+    font-size: 14px;
+    color: #6e6e6e;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.schedule-table table tbody tr .workout-time {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.schedule-table {
+    cursor: pointer;
+}
+
+.schedule-table tr {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.schedule-table tr:hover {
+    background-color: #71C5A5;
+    color: #7304f3;
+}
+
+
+/*----------------------------------
+  Start personal trainers edition
+----------------------------------*/
+
+
+.title-personal-trainers{
+    color: #424850;
+    font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 500;
+    margin-bottom: 2rem;   
+}
+
+.text-personal-trainers {
+    color: #777777;
+    font-family: 'poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.625em;
+    align-content: center;
+    background-color: #4a9e7e;
+}
+
+.personal-img {
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    background-color: #4a9e7e;
+}
+
+.personal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.personal-reference {
+    height: 380px;   
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.all-personal-trainers {
+    color: #71C5A5;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
+}  
+
+.personal-reference img {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    color: #71C5A5;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'oswald', 'Arial Narrow', 'Arial', 'sans-serif';
+}
+
+
+/*---------------------
+  Planos Section Begin
+-----------------------*/
+
+#planos {
+    background-image: url(), linear-gradient(#4a9e7e, #fafafa, #4a9e7e);
+}
+
+.pricing-section {
+	background-image: url(/img/crossfit-banner-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ps-item {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pricing-section .section-title {
+	margin-bottom: 56px;
+    color: white;
+}
+
+.ps-item {
+	text-align: center;
+	padding: 40px 30px 52px;
+	border: 1px solid #464646;
+	-webkit-transform: skewY(-4deg);
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.title-planos {
+	text-align: center;
+	padding: 40px 30px 52px;
+	border: 1px solid #464646;
+	-webkit-transform: skewY(-4deg);
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.ps-item:hover {
+	background: #ffffff;
+	border-color: #ffffff;
+}
+
+.ps-item:hover h3 {
+	color: #111111;
+}
+
+.ps-item:hover .pi-price span {
+	color: #444444;
+}
+
+.ps-item:hover ul li {
+	color: #111111;
+	font-weight: 600;
+}
+
+.ps-item:hover .primary-btn.pricing-btn {
+	background: #f36100;
+}
+
+.ps-item:hover .thumb-icon {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ps-item h3 {
+	font-size: 28px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 16px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price {
+	margin-bottom: 30px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price h2 {
+	font-size: 60px;
+	color: #f36100;
+	font-weight: 600;
+}
+
+
+.ps-item ul {
+	margin-bottom: 40px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item ul li {
+	font-size: 14px;
+	color: white;
+	line-height: 32px;
+	list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ps-item .primary-btn.pricing-btn {
+	display: block;
+	background: #333333;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .thumb-icon {
+	font-size: 48px;
+	color: #f36100;
+	position: absolute;
+	left: 50px;
+	bottom: 120px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+/*------------------------
+            Footer
+ ------------------------ */
+
+.footer-section {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.img-map {
+    height: 100px;
+    width: 140px;
+    overflow: clip;
+}
+
+
+.img-avatar {
+    height: 128px;
+    width: 128px;
+}
+
+.footer-section {
+    overflow: hidden;
+  }
+  
+  .map-location {
+    height: 610px;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .map-location iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .map-location .map-widget {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+  }
+  .map-location .map-widget i {
+    position: absolute;
+    left: 77%;
+    top: 109px;
+    font-size: 35px;
+    color: #f34e3a;
+  }
+  .map-location .map-widget .map-address {
+    height: 100px;
+    width: 330px;
+    background: #ffffff;
+  }
+  .map-location .map-widget .map-address img {
+    float: left;
+  }
+  .map-location .map-widget .map-address ul {
+    display: table;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 22px;
+    padding-right: 25px;
+  }
+  .map-location .map-widget .map-address ul li {
+    list-style: none;
+    color: #707070;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+  .map-location .map-widget .map-address ul li:last-child {
+    color: #f34e3a;
+  }
+  .map-location .map-widget .map-address ul li span {
+    color: #252525;
+  }
+  
+  .footer-form {
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 610px;
+    padding-left: 85px;
+    padding-top: 80px;
+    background-image: url(/img/about_1.jpg);
+    background-size: cover;
+  }
+  .footer-form .section-title h2 {
+    color: #ffffff;
+    margin-bottom: 28px;
+    font-weight: 600;
+  }
+  .footer-form .section-title p {
+    color: #ffffff;
+  }
+  .footer-form form input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .footer-form form textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ebebeb;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    resize: none;
+  }
+  .footer-form form button {
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+    color: #ffffff;
+    background: #f34e3a;
+    border: 1px solid #f34e3a;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 52px 10px 39px;
+    position: relative;
+    cursor: pointer;
+  }
+  .footer-form form button i {
+    font-size: 10px;
+    position: absolute;
+    right: 35px;
+    top: 16px;
+  }
+  
+  .register {
+    background: #191919;
+    padding: 15px 0;
+  }
+  .register.normal-register .copyright span {
+    color: #f34e3a;
+  }
+  .register.normal-register .footer-widget ul li.active {
+    color: #f34e3a;
+  }
+  .register .copyright {
+    float: left;
+    font-size: 14px;
+    color: #6e6e6e;
+    line-height: 28px;
+    margin-right: 220px;
+  }
+  .register .footer-widget {
+    float: left;
+  }
+  .register .footer-widget ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    color: #6e6e6e;
+    margin-right: 34px;
+    position: relative;
+  }
+  .register .footer-widget ul li:after {
+    color: #6e6e6e;
+    content: "|";
+    position: absolute;
+    right: -21px;
+    top: -1px;
+  }
+  .register .footer-widget ul li:last-child {
+    margin-right: 0;
+  }
+  .register .footer-widget ul li:last-child:after {
+    display: none;
+  }
+  .register .footer-links {
+    float: right;
+  }
+  .register .footer-links a {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 25px;
+    color: #6e6e6e;
+  }

@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Bem-vindo à Academia FORÇA FITNESS - seu destino para saúde e bem estar. 
+    Oferecemos uma variedade de serviços e instalações para ajudá-lo a alcançar seus objetivos.">
+    <meta name="keywords" content="ACADEMIA, MUSCULAÇÃO, BOXE, YOGA, BEM ESTAR, SAÚDE, FITDANCE, AERÓBICA">
+    <meta name="author" content="Erivaldo Silva">
+    <meta name="reply-to" content="erivaldosilva.hype@gmail.com">
+    <!--CRIAR UM ICON FAVICON PARA O SITE-->
+    <link rel="icon" type="image/x-icon" href="../favi/favicon.jpg">
+    <!--VERIFICAR COM EMERSON SE ESSA META NAME CANONICA ESTA CORRETA-->
+    <link rel=”canonical” href=”http://www.ffitness.com.br/index.html” />
+    <title>FORÇA FITNESS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+    <script src="../Js/myScripts.js"></script>
+  
+<body>
+
+
+  <!-- Header Section Begin -->
+  <header>
+    <nav class="navbar navbar-dark fixed-top col-12 m-auto text-uppercase">
+      <div class="container-links container-fluid col-12 m-auto fixed-top justify-content-around">
+        <!--Start image logo-->
+        <a class="navbar-brand mb-5" href="#">
+          <h1 class="d-flex align-items-center justify-content-center position-relative mb-5">FF</h1>
+        </a>
+        <!--End image logo-->
+
+      <!--Ajuste min width link nav -->
+      <div style="margin-top: -84px;" class="d-none d-lg-flex">
+      <!--Espace links menu-->    
+      <div class="justify-content-around">    
+        <!--Start list ul-->
+        <ul class="navbar-nav d-flex flex-row">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#unidades">Unidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#modalidades">Modalidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#horarios">Horários</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#personalTrainers">Personal Trainers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#planos">Planos</a>
+
+          <!--Start button login-->
+          <li>
+            <a href="../assets/login.html" class="btn btn-outline-light" tabindex="-1" role="button" aria-disabled="false">Login</a>
+          </li>
+          <!--End button login-->
+        </ul>
+        <!--End list ul-->
+      </div>
+      </div>
+
+      <!--Start icon hamburguer-->
+      <button style="border: 2px transparent; margin-top: -84px;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--End icon hamburguer-->
+
+      <!--Start menu side offcanvas-->
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!--Start image logo offcanvas-->
+        <div class="offcanvas-header" data-bs-theme="dark">
+            <a href="#">
+              <h1 class="d-flex align-items-center justify-content-center">FF</h1>
+            </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!--End image logo offcanvas-->
+
+      <!--Start list links menu side offcanvas-->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#hero">Home</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#unidades">Unidades</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modalidades">Modalidades</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#horarios">Horários</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#personalTrainers">Personal Trainers</a><hr>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#planos">Planos</a><hr>
+          <!--Start button login menu offcanvas-->
+          <li>
+            <a href="../assets/login.html" class="btn btn-outline-light btn-offcanvas" tabindex="-1" role="button" aria-disabled="false">Login</a>
+          </li>
+          <!--End button login menu offcanvas-->
+          <li style="text-transform: capitalize; font-size: 1.2rem;" class="nav-item">
+            <a class="nav-link" href="#">Dúvidas Frequentes</a>
+          </li>
+        </ul>
+      </div>
+      <!--End list links menu side offcanvas-->
+
+      </div>
+      <!--End menu side offcanvas-->
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+    
+
+  <!-- Hero Section Begin -->
+<section id="hero" class="hero-section">
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/1.jpg" class="d-block w-100 object-fit-cover" alt="Imagem 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Mais que uma academia um estilo de vida</h4>
+          <p>Encontre o plano ideal para você</p>
+          <button>Matricule-se </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/2.jpg" class="d-block w-100 object-fit-cover" alt="Imagem 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Second slide label</h4>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/3.jpg" class="d-block w-100 object-fit-cover" alt="Imagem 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Third slide label</h4>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../10.Carousel/gallery-6.jpg" class="d-block w-100 object-fit-cover" alt="Imagem 4">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Mês dos namorados</h4>
+          <h6>Aproveite 3 meses a mais na contratação do plano atual</h6>
+          <p>Oferta válida em academias selecionadas até 30/06/24 no plano atual. Consulte as academias participantes da promoção anual.</p>
+        </div>
+      </div>
+        <!--CREATE CAROUSEL SEU LUGAR DE PRATICAR ESPORTES
+        Aqui criarei um video estilo academia dogpound-->
+      <div class="carousel-item">
+        <img src="" class="d-block w-100" alt="BLOG" style="background-color: black;">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Blog slide label</h4>
+          <p>Some representative placeholder content for the blog slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item d-block w-100 object-fit-cover">
+        <div style="position: relative; height: 550px; padding-top: 56.2225%;
+        padding-bottom: 0; overflow: hidden;
+        border-radius: 8px; will-change: transform;" class="d-block w-100" alt="APP">
+         <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+           src="https://www.canva.com/design/DAGINwObe0U/yGwjKPzi_0piL2vh0onA7A/view?embed">
+         </iframe>
+       </div>
+     </div>
+      <div class="carousel-item">
+        <img src="" class="d-block w-100" alt="Esportes" style="background-color: black;">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Seu lugar de praticar esportes</h4>
+          <p>Some representative placeholder content for the sports slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!--End Section Hero-->
+
+
+<button onclick="boasVindas()">
+  <img class="img-avatar" src="../843.jpg" alt=""> 
+</button>
+
+<script>
+  function boasVindas() {
+    var nomeUser = prompt("Seja bem vindo! Qual o seu nome?");
+    alert("Olá "+nomeUser+" eu sou o seu assistente virtual e estou aqui para te ajudar");
+    alert("Qualquer duvida e só clicar sobre mim, e estarei aqui disponivel para voce");
+}
+
+</script>
+
+  <!--Unidades Section Begin-->
+  <article id="unidades" class="unidades">
+    <div class="search text-center col-9 m-auto">
+      <label for="exampleDataList" class="form-label text-uppercase m-5">Encontre a sua Força Fitness</label>
+    <div class="input-group">
+      <img src="../icons/search.png" alt="search" class="input-group-text">
+      <input class="form-control text-uppercase" list="datalistOptions" id="exampleDataList" placeholder="Academia, CEP, bairro ou cidade">
+      <button type="button" class="btn btn-outline-success text-uppercase">Buscar</button>
+    </div>
+    <div class="all-gyms-container d-flex justify-content-end m-4">
+      <a class="text-uppercase" href="#">Ver todas unidades</a>
+    </div>
+    <datalist id="datalistOptions">
+      <option value="Alhandra">
+      <option value="Boa Viagem">
+      <option value="Camaragibe">
+      <option value="Campina Grande">
+      <option value="Carpina">
+      <option value="Fortaleza">
+      <option value="João Pessoa">
+      <option value="Natal">
+      <option value="Salvador">
+    </datalist>
+    </div>
+
+    <div class="view-unidades d-flex flex-wrap col-9 m-auto border border-black justify-content-center">
+      
+        <a class="box-links col-3" href="">Alhandra</a>
+      
+        <a class="box-links col-3" href="">Boa Viagem</a>
+      
+        <a class="box-links col-3" href="">Camaragibe</a>
+      
+        <a class="box-links col-3" href="">Campina Grande</a>
+      
+        <a class="box-links col-3" href="">Carpina</a>
+      
+        <a class="box-links col-3" href="">Fortaleza</a>
+     
+        <a class="box-links col-3" href="">João Pessoa</a>
+      
+        <a class="box-links col-3" href="">Natal</a>
+      
+        <a class="box-links col-3" href="">Salvador</a>
+      
+    </div>
+
+  </article>  
+  <!--End Section Modalidades-->
+
+
+  <!--Banner Section Begin-->
+<aside id="modalidades" class="banner mb-5">
+  <div id="carousel-banner" class="container-banner col-12 d-flex p-3">
+    <!--BANNER VIDEOS LEFTH-->
+    <div id="banner-1" class="banner col-4">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../0.Modalidades/7875587-hd_1920_1080_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../video/Banner-musculation-2.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../2.Funcional/4671946-hd_1066_1920_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../3.CrossFit/6254849-uhd_2160_3840_30fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../4.boxe/4761711-hd_1366_720_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src=".." class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../6.Yoga/6326791-hd_1080_1920_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../9.balletKids/5895167-uhd_3840_2160_30fps.mp4" class="container-fluid object-fit-cover"></video>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    
+      
+    <!--BANNER IMG MID-->
+    <div id="banner-2" class="banner col-4">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid align-content-center">
+              <div class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">Nossas modalidades</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid align-content-center">
+              <div id="img-musculacao" class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">Musculacao</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid align-content-center">
+              <div id="img-funcional" class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">Funcional</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid align-content-center">
+              <div id="img-crossFit" class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">CrossFit</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid align-content-center">
+              <div id="img-boxe" class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">kickboxing</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid align-content-center">
+              <div id="img-zumba" class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">Zumba</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid align-content-center">
+              <div id="img-yoga" class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">Yoga</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid align-content-center">
+              <div id="img-ballet" class="title-modalidades d-flex text-uppercase text-light justify-content-center">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="bg-text-modalidades p-2">Ballet Kids</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--BANNER VIDEOS RIGTH-->
+    <div id="banner-3" class="banner col-4">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../0.Modalidades/4117486-uhd_2160_3840_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../1.Musculacao/5319426-uhd_2160_3840_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../2.Funcional/4671951-hd_1066_1920_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../3.CrossFit/6389054-uhd_2160_3840_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../4.boxe/5751966-uhd_2160_3840_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src=".." class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../6.Yoga/6740725-hd_1080_1920_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+          <div class="carousel-item">
+            <video type="video/mp4" muted="muted" autoplay="autoplay" src="../9.balletKids/10628912-uhd_4096_2160_25fps.mp4" class="container-fluid object-fit-cover"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+<!--End Section Banner-->
+
+<script>
+  document.querySelectorAll('.carousel-indicators button').forEach(button => {
+    button.addEventListener('click', function() {
+      let index = this.getAttribute('data-bs-slide-to');
+      document.querySelectorAll('.carousel').forEach(carousel => {
+        let carouselInstance = bootstrap.Carousel.getInstance(carousel);
+        carouselInstance.to(index);
+      });
+    });
+  });
+
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    carousel.addEventListener('slide.bs.carousel', function(event) {
+      let index = event.to;
+      let videos = event.relatedTarget.querySelectorAll('video');
+      videos.forEach(video => {
+        video.currentTime = 0;
+        video.play();
+      });
+    });
+  });
+</script>
+
+
+
+  <!-- Trainer Table Schedule Section Begin -->
+  <section id="horarios" class="trainer-schedule">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="section-title mt-5">
+                  <h2>Horários</h2>
+                  <p class="mb-5">Nossos especialistas podem ajudá-lo a descobrir novas técnicas de treinamento</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12">
+              <div id="schedule-table-2" class="schedule-table mb-5">
+                  <table>
+                    <button onclick="tablePrint()" id="btn-print">IMPRIMIR</button>
+                      <thead>
+                          <tr>
+                              <th>Modalidade</th>
+                              <th>Seg</th>
+                              <th>Ter</th>
+                              <th>Qua</th>
+                              <th>Qui</th>
+                              <th>Sex</th>
+                              <th>Sab</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="workout-time">Gym</td>
+                            <td class="gym">
+                                <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                              <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                              <h6>Gym</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                              <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                              <h6>Gym</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                              <h6>Gym</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Treinamento Funcional</td>
+                            <td class="gym">
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">CrossFit</td>
+                          <td class="gym">
+                            <h6>Musculaçao</h6>
+                            <span>06.00 - 21.00</span>
+                            <div class="trainer-name">
+                                Daniela Martin
+                            </div>
+                          </td>
+                            <td>
+                            </td>
+                            <td class="yoga">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="body">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Boxe</td>
+                            <td class="gym">
+                                <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Zumba</td>
+                            <td class="gym">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="body">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Yoga</td>
+                            <td class="gym">
+                                <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="yoga">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="body">
+                              <h6>Musculaçao</h6>
+                              <span>06.00 - 21.00</span>
+                              <div class="trainer-name">
+                                  Daniela Martin
+                              </div>
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td class="workout-time">Ballet Fitness</td>
+                            <td class="gym">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="yoga">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                            <td class="body">
+                            </td>
+                            <td>
+                              <h6>Musculaçao</h6>
+                                <span>06.00 - 21.00</span>
+                                <div class="trainer-name">
+                                    Daniela Martin
+                                </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Trainer Table Schedule Section End -->
+
+
+  <!--Header Personal Trainers Begin-->
+  <div class="header-personal-trainers m-5">
+    <div class="container-title m-1 d-flex justify-content-center">
+      <h2 class="title-personal-trainers text-uppercase">Equipe</h2>
+    </div>
+    <div class="container-text d-flex justify-content-center">
+      <p style="background-color: white;" class="text-personal-trainers">Conheça nossa talentosa equipe de treinadores</p>
+    </div>
+  </div>
+  <!--End Header Personal Traines-->
+
+
+  <!--Section Personal Trainers Begin-->
+  <section id="personalTrainers" class="personal-trainers">
+  <section class="personal-trainers">
+    <div class="container-personal-trainers container-fluid p-5">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="personal-img col-4">
+          <img src="../img/trainer-1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="personal-reference col-4 p-3">
+          <h5>Personal Trainer</h5>
+          <h4>Daniela Martin</h4>
+          <p>Graduação em Educação Física<br>Pós-graduação em Fisiologia do Exercício</p>
+          <img src="../icons/logo-do-facebook.png" alt="">
+          <img src="../icons/logotipo-do-twitter.png" alt="">
+          <img src="../icons/instagram-grey-outline-22754.svg" alt="">
+        </div>
+        <div class="personal-img col-4">
+          <img src="../img/team-3.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row d-flex flex-wrap">
+        <div class="personal-reference col-4 p-3">
+          <h5>Instrutor de boxe</h5>
+          <h4>Alex Hibas</h4>
+          <p>Bacharelado em Educação Física<br>Ex-fugilista profissional<br>Campeão Regional Torneio Norte-Nordeste 2012</p>
+          <img class="icon-personal" src="../icons/logo-do-facebook.png" alt="">
+          <img class="icon-personal" src="../icons/logotipo-do-twitter.png" alt="">
+          <img class="icon-personal" src="../icons/instagram-grey-outline-22754.svg" alt="">
+        </div>
+        <div class="personal-img col-4">
+          <img src="../img/team-5.jpg" alt="" class="img-fluid object-fit-cover">
+        </div>
+        <div class="personal-reference col-4 p-3">
+          <h5>Treinador de halterofilismo</h5>
+          <h4>Igor Castelani</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur quod laudantium accusamus</p>
+          <img class="icon-personal" src="../icons/logo-do-facebook.png" alt="">
+          <img class="icon-personal" src="../icons/logotipo-do-twitter.png" alt="">
+          <img class="icon-personal" src="../icons/instagram-grey-outline-22754.svg" alt="">
+        </div>
+      </div>
+
+      <button onclick="mostrarIMC()" class="imc">IMC</button>
+
+      <script>
+        function mostrarIMC() {
+          var altura = prompt("Digite a sua altura em metros").replace(',', '.');
+          altura = parseFloat(altura);
+          var peso = prompt("Digite seu peso em kilos").replace(',', '.');
+          peso = parseFloat(peso);
+      
+          if (isNaN(altura) || isNaN(peso)) {
+            alert("Por favor, insira valores válidos para altura e peso.");
+            return;
+          }
+      
+          var result = (peso / (altura ** 2));
+          alert("Seu IMC é: " + result.toFixed(2));
+        }
+      </script>
+
+    </div>
+
+    <!--
+    <div class="personal-img col-3">
+      <img src="../img/trainer-profile.jpg" alt="">
+    </div>  
+    <div class="personal-reference col-3">
+      <h5>Instrutor de boxe</h5>
+      <h4>Alex Hibas</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur quod laudantium accusamus</p>
+    </div>
+    <div class="personal-img col-3">
+      <img src="../img/person_1.jpg" alt="">
+    </div>
+    -->
+    
+    <div class="all-personal-trainers-container d-flex justify-content-end m-5">
+      <a href="#" class="primary-btn text-uppercase">Ver Todos <i class="ti-angle-double-right"></i></a>
+    </div>
+  </section>
+<!--Personal Traines Section End-->
+
+
+  <!--Planos Section Begin-->
+  <article id="planos" class="p-5">
+    <div class="pricing-section spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title bg-success-subtle col-6 m-auto">
+            <h2 class="title-planos d-flex row col-12 justify-content-center m-4 p-1 bg-secondary border border-secondary-subtle border-2">Planos</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center m-5">
+          <div class="plano-1 col-lg-4 col-md-8">
+            <div class="ps-item">
+              <h3>Básico</h3>
+            <div class="pi-price">
+              <h2>R$ 99.00</h2>
+            </div>
+              <ul>
+                <li>Aulas coletivas</li>
+                <li>Horários livres</li>
+                <li>Avaliação física</li>
+                <li>Zero taxa de matrícula</li>
+              </ul>
+                <a href="#" class="primary-btn pricing-btn">Matricule-se</a>
+                <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+            </div>
+          </div>
+      <div class="col-lg-4 col-md-8">
+        <div class="ps-item">
+          <h3>Platinium</h3>
+          <div class="pi-price">
+            <h2>R$ 139.00</h2>
+          </div>
+            <ul>
+              <li>Aulas coletivas</li>
+              <li>Horários livres</li>
+              <li>Personal Trainer</li>
+              <li>Nutricionista</li>
+              <li>Avaliação física</li>
+              <li>Trinta dias de congelamento</li>
+              <li>Zero taxa de matrícula</li>
+            </ul>
+              <a href="#" class="primary-btn pricing-btn">Matricule-se</a>
+              <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+        </div>
+      </div>
+        <div class="col-lg-4 col-md-8">
+          <div class="ps-item">
+              <h3>Vip</h3>
+            <div class="pi-price">
+              <h2>R$ 199.00</h2>
+            </div>
+            <ul>
+              <li>Aulas coletivas</li>
+              <li>Horários livres</li>
+              <li>Duas pessoas treinam</li>
+              <li>Personal trainer</li>
+              <li>Nutricionista</li>
+              <li>Avaliação física</li>
+              <li>Livre acesso toda unidades</li>
+              <li>Trinta dias de congelamento</li>
+              <li>Zero taxa de matrícula</li>
+            </ul>
+            <a href="#" class="primary-btn pricing-btn">Matricule-se</a>
+            <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </article>
+  <!--Planos Section End-->
+
+  
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="map-location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.360622127721!2d-35.449836525878304!3d-7.857275378098584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7abbc667222e55f%3A0x73d604a59494e8c0!2sEscola%20T%C3%A9cnica%20Estadual%20Jos%C3%A9%20Humberto%20de%20Moura%20Cavalcanti!5e0!3m2!1spt-BR!2sbr!4v1718092264318!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <div class="map-widget">
+                          <i class="fa fa-map-marker"></i>
+                          <div class="map-address">
+                              <img src="img/map-location.jpg" alt="">
+                              <ul class="map-text">
+                                  <li><span>Address:</span> Iris Watson, Box 283, PE</li>
+                                  <li><span>Phone:</span> 81-9900-0099</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6"> 
+                  <div class="footer-form set-bg">
+                      <div class="row">
+                          <div class="col-lg-10">
+                              <div class="section-title">
+                                  <h2>Request A Call Back</h2>
+                                  <p>Shape your body and burn fat with strength training. With the right equipment
+                                      such as free weights or resistance machines.</p>
+                              </div>
+                              <form action="#">
+                                  <div class="row">
+                                      <div class="col-lg-6">
+                                          <input type="text" placeholder="Name">
+                                      </div>
+                                      <div class="col-lg-6">
+                                          <input type="text" placeholder="Email">
+                                      </div>
+                                      <div class="col-lg-12">
+                                          <input type="text" placeholder="Subject">
+                                          <textarea placeholder="Message"></textarea>
+                                          <button type="submit">Submit <i class="ti-angle-double-right"></i></button>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="register">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="copyright">
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      </div>
+                      <div class="footer-widget">
+                          <ul>
+                              <li>Privacy Policy</li>
+                              <li>Terms Of Service</li>
+                              <li>Careers</li>
+                          </ul>
+                      </div>
+                      <div class="footer-links">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
